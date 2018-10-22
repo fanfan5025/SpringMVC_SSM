@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <typeAliases>
+        <!--设置这个包下面的所有类的别名  默认是类名小写-->
+        <package name="com.fanfan.entity"/>
+    </typeAliases>
+    <mappers>
+        <!-- 路径指定方式，无特殊要求 -->
+        <!--<mapper resource="com/fanfan/dao/UserDao.xml" />-->
+        <!-- 此方式必须保证接口与mapper文件名保持一致，且在同包下 -->
+        <package name="com.fanfan.dao"/>
+    </mappers>
+</configuration>
